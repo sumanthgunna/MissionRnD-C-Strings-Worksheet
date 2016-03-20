@@ -43,7 +43,7 @@ bool compare(char * temp, char * sent2)
 		return false;
 	int n = 0;
 	char * temp2;
-	temp2 = (char *)malloc(sizeof(char)* 20);
+	temp2 = (char *)malloc(sizeof(char)* 100);
 	for (int j = 0; sent2[j] != '\0'; j++)
 	{
 		if (sent2[j] != ' ')
@@ -75,7 +75,7 @@ char ** commonWords(char * str1, char * str2)
 		return NULL;
 
 	char * temp1;
-	temp1 = (char *)malloc(sizeof(char)* 20);
+	temp1 = (char *)malloc(sizeof(char)* 100);
 	for (int i = 0; str1[i] != '\0'; i++)
 	{
 		if (str1[i] != ' ')
